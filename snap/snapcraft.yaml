@@ -9,7 +9,8 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 
 apps:
   qxmledit:
-    command: desktop-launch $SNAP/qxmledit --snap
+    command: desktop-launch $SNAP/usr/bin/qxmledit
+#    desktop: usr/share/applications/qxmledit.desktop
     plugs:
       - desktop
       - desktop-legacy
@@ -17,11 +18,12 @@ apps:
       - unity7
       - opengl
       - home
-
 parts:
   qxmledit:
     plugin: qmake
     qt-version: qt5
+    options:
+      - CONFIG+=release
     source: https://github.com/lbellonda/qxmledit/archive/0.9.10.tar.gz
     build-packages:
       - build-essential
@@ -39,3 +41,4 @@ parts:
       - libqt5printsupport5
       - libqt5xml5
     after: [desktop-qt5]
+      
