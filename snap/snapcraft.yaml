@@ -7,10 +7,11 @@ description: |
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
+icon: images/icon.svg
 apps:
   qxmledit:
-    command: desktop-launch $SNAP/usr/bin/qxmledit
-#    desktop: usr/share/applications/qxmledit.desktop
+    command: desktop-launch $SNAP/bin/qxmledit
+#    desktop: qxmledit/meta/gui/QXmlEdit.desktop
     plugs:
       - desktop
       - desktop-legacy
@@ -18,6 +19,8 @@ apps:
       - unity7
       - opengl
       - home
+    environment:
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/opt/qxmledit/
 parts:
   qxmledit:
     plugin: qmake
@@ -40,5 +43,13 @@ parts:
       - libqt5opengl5
       - libqt5printsupport5
       - libqt5xml5
+    filesets:
+      libQXmlEditWidget: [opt/qxmledit/libQXmlEditWidget-*]
+    organize:
+      opt/qxmledit/QXmlEdit.desktop: meta/gui/QXmlEdit.desktop
+      $libQXmlEditWidget: usr/share/libQXmlEditWidget/
+      opt/qxmledit/qxmledit: bin/qxmledit
+      opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
+#      opt/qxmledit/: bin/
     after: [desktop-qt5]
       
