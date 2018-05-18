@@ -34,6 +34,7 @@ parts:
       - qtdeclarative5-dev
       - libqt5svg5-dev
       - libqt5xmlpatterns5-dev
+      - libqwtplot3d-qt5-dev
     stage-packages:
       - libqt5svg5
       - libqt5xmlpatterns5
@@ -43,6 +44,7 @@ parts:
       - libqt5opengl5
       - libqt5printsupport5
       - libqt5xml5
+      - libqwtplot3d-qt5-0
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
