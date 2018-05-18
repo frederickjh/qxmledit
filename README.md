@@ -19,9 +19,8 @@ distributions.</p>
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
-<!-- Uncomment and modify this when you have a screenshot
-![QXmlEdit](screenshot.png?raw=true "QXmlEdit")
--->
+
+![QXmlEdit](images/qxmledit-screenshot-800.png?raw=true "QXmlEdit")
 
 <p align="center">Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with :gift_heart: by Snapcrafters</p>
 
@@ -37,9 +36,9 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
   - [x] Rename the forked Snapcrafters template repository
   - [x] Update the description of the repository
   - [x] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [ ] Create a snap that runs in `devmode`
+  - [x] Create a snap that runs in `devmode`
   - [ ] Register the snap in the store, **using the preferred upstream name**
-  - [ ] Add a screenshot to this `README.md`
+  - [x] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
