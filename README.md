@@ -7,11 +7,10 @@
 <p align="center"><b>This is the snap for <a href="http://qxmledit.org/">QXmlEdit</a></b>, <i>"QXmlEdit is a simple XML editor based on Qt libraries."</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
-<!-- Uncomment and modify this when you are provided a build status badge
+
 <p align="center">
-<a href="https://build.snapcraft.io/user/snapcrafters/fork-and-rename-me"><img src="https://build.snapcraft.io/badge/snapcrafters/fork-and-rename-me.svg" alt="Snap Status"></a>
+<a href="https://build.snapcraft.io/user/frederickjh/qxmledit"><img src="https://build.snapcraft.io/badge/frederickjh/qxmledit.svg" alt="Snap Status"></a>
 </p>
--->
 
 ## Install
 
@@ -37,7 +36,7 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
   - [x] Update the description of the repository
   - [x] Update logos and references to `[Project]` and `[my-snap-name]`
   - [x] Create a snap that runs in `devmode`
-  - [ ] Register the snap in the store, **using the preferred upstream name**
+  - [x] Register the snap in the store, **using the preferred upstream name**
   - [x] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`
