@@ -30,6 +30,8 @@ parts:
     source: https://github.com/lbellonda/qxmledit/archive/0.9.10.tar.gz
     build-packages:
       - build-essential
+      - libgl1-mesa-dev
+      - mesa-common-dev
       - qttools5-dev-tools
       - qtdeclarative5-dev
       - libqt5svg5-dev
@@ -45,7 +47,6 @@ parts:
       - libqt5printsupport5
       - libqt5xml5
       - libqwtplot3d-qt5-0
-      - python3-pyqt5.qtopengl
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
