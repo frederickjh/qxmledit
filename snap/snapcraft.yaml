@@ -45,6 +45,7 @@ parts:
       - libqt5printsupport5
       - libqt5xml5
       - libqwtplot3d-qt5-0
+      - python3-pyqt5.qtopengl
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
