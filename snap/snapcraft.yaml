@@ -19,6 +19,7 @@ apps:
       - unity7
       - opengl
       - home
+      - removable-media
     environment:
       LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/opt/qxmledit/
 parts:
