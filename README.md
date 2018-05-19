@@ -14,7 +14,9 @@ distributions.</p>
 
 ## Install
 
-    sudo snap install qxmledit
+    sudo snap install --edge  --devmode qxmledit
+or
+    sudo snap install --edge  --jailmode qxmledit
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
@@ -38,9 +40,9 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
   - [x] Create a snap that runs in `devmode`
   - [x] Register the snap in the store, **using the preferred upstream name**
   - [x] Add a screenshot to this `README.md`
-  - [ ] Publish the `devmode` snap in the Snap store edge channel
-  - [ ] Add install instructions to this `README.md`
-  - [ ] Update snap store metadata, icons and screenshots
+  - [x] Publish the `devmode` snap in the Snap store edge channel
+  - [x] Add install instructions to this `README.md`
+  - [x] ] Update snap store metadata, icons and screenshots
   - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [ ] Publish the confined snap in the Snap store beta channel
   - [ ] Update the install instructions in this `README.md`
