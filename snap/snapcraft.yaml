@@ -39,6 +39,9 @@ parts:
       - libqt5xmlpatterns5-dev
       - libqwtplot3d-qt5-dev
       - libqt5opengl5-dev
+    override-build: |
+      snapcraftctl build
+      sed -i 's|Icon=qxmledit|Icon=\${SNAP}/meta/gui/icon.svg|' ${SNAPCRAFT_PART_INSTALL}/opt/qxmledit/QXmlEdit.desktop
     stage-packages:
       - libqt5svg5
       - libqt5xmlpatterns5
