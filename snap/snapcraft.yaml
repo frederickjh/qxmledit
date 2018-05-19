@@ -28,7 +28,11 @@ parts:
     qt-version: qt5
     options:
       - CONFIG+=release
-    source: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    source:
+      - on amd64: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
+      - on i386: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
+      - on arm64: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
+      - on armhf: fail
     source-type: tar
     build-packages:
       - build-essential
