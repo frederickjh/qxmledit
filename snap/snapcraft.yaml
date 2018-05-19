@@ -28,7 +28,8 @@ parts:
     qt-version: qt5
     options:
       - CONFIG+=release
-    source: https://github.com/lbellonda/qxmledit/archive/0.9.10.tar.gz
+    source: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    source-type: tar
     build-packages:
       - build-essential
       - libgl1-mesa-dev
