@@ -16,6 +16,7 @@ distributions.</p>
 
     sudo snap install --edge  --devmode qxmledit
 or
+
     sudo snap install --edge  --jailmode qxmledit
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
