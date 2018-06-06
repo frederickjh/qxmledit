@@ -12,6 +12,7 @@ distributions.</p>
 <a href="https://build.snapcraft.io/user/frederickjh/qxmledit"><img src="https://build.snapcraft.io/badge/frederickjh/qxmledit.svg" alt="Snap Status"></a>
 </p>
 
+
 ## Install
 
     sudo snap install --edge  --devmode qxmledit
