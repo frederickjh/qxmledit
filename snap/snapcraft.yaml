@@ -67,6 +67,6 @@ parts:
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
-      opt/qxmledit/sample.style: bin/sample.stlye
+      opt/qxmledit/sample.style: bin/sample.style
     after: [desktop-qt5]
       
