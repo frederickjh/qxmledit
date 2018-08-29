@@ -65,9 +65,32 @@ parts:
       - libstdc++6
       - zlib1g
     stage:
-      - -usr/lib/x86_64-linux-gnu/
-      - -lib/x86_64-linux-gnu/
-      - -usr/share/doc/
+      - -lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
+      - -lib/x86_64-linux-gnu/libpng12.so.0.54.0
+      - -usr/lib/x86_64-linux-gnu/glib-2.0/gio-querymodules
+      - -usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-resources
+      - -usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-schemas
+      - -usr/lib/x86_64-linux-gnu/libLLVM-6.0.so.1
+      - -usr/lib/x86_64-linux-gnu/libcups.so.2
+      - -usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
+      - -usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.0.0
+      - -usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+      - -usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
+      - -usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
+      - -usr/lib/x86_64-linux-gnu/libelf-0.165.so
+      - -usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2
+      - -usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4800.2
+      - -usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2
+      - -usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
+      - -usr/lib/x86_64-linux-gnu/libjpeg.so.8.0.2
+      - -usr/share/doc/libcups2/changelog.Debian.gz
+      - -usr/share/doc/libdrm-common/changelog.Debian.gz
+      - -usr/share/doc/libelf1/changelog.Debian.gz
+      - -usr/share/doc/libglib2.0-0/changelog.Debian.gz
+      - -usr/share/doc/libjpeg-turbo8/changelog.Debian.gz
+      - -usr/share/doc/libllvm6.0/changelog.Debian.gz
+      - -usr/share/doc/libpng12-0/changelog.Debian.gz
+      - -usr/share/doc/x11-common/changelog.gz
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
