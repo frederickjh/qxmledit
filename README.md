@@ -15,10 +15,7 @@ distributions.</p>
 
 ## Install
 
-    sudo snap install --beta  --devmode qxmledit
-or
-
-    sudo snap install --beta  --jailmode qxmledit
+    sudo snap install --beta qxmledit
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
