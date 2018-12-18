@@ -59,7 +59,6 @@ parts:
       - libqt5printsupport5
       - libqt5xml5
       - libqwtplot3d-qt5-0
-      - libc6
       - libgcc1
       - libqt5core5a
       - libqt5gui5
