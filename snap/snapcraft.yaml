@@ -33,6 +33,8 @@ parts:
       - on i386: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
       - on arm64: https://github.com/lbellonda/qxmledit/archive/$SNAPCRAFT_PROJECT_VERSION.tar.gz
       - on armhf: fail
+      - on s390x: fail
+      - on ppc64el: fail
     source-type: tar
     build-packages:
       - build-essential
