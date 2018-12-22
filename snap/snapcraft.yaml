@@ -33,13 +33,7 @@ parts:
     qt-version: qt5
     options:
       - CONFIG+=release
-    source:
-      - on amd64: https://github.com/lbellonda/qxmledit.git
-      - on i386: https://github.com/lbellonda/qxmledit.git
-      - on arm64: https://github.com/lbellonda/qxmledit.git
-      - on armhf: fail
-      - on s390x: fail
-      - on ppc64el: fail
+    source: https://github.com/lbellonda/qxmledit.git
     source-branch: master
     source-type: git
     build-packages:
