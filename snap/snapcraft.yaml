@@ -25,6 +25,7 @@ apps:
       - opengl
       - home
       - removable-media
+      - network
 
 parts:
   qxmledit:
