@@ -232,5 +232,4 @@ parts:
       - -usr/share/doc/libxkbcommon0/changelog.Debian.gz
     organize:
       snap/$SNAPCRAFT_PROJECT_NAME/current: /
-    after: [desktop-qt5]
-      
+  desktop-qt5:
