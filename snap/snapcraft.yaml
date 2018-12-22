@@ -1,6 +1,6 @@
 name: qxmledit # you probably want to 'snapcraft register <name>'
 version: latest # just for humans, typically '1.2+git' or '1.3.2'
-version-script: ./snap/scripts/getversion.sh
+version-script: git -C parts/qxmledit/src describe --always --dirty --tags
 summary: QXmlEdit is a simple XML editor based on Qt libraries. # 79 char long summary
 description: |
   QXmlEdit is a simple XML editor based on Qt libraries. Its main features are unusual data visualization modes, nice XML manipulation and presentation and it is multi platform. It can split very big XML files into fragments, and compare XML and XSD files. It was born on Google code (https://code.google.com/p/qxmledit).
@@ -16,7 +16,7 @@ architectures:
 apps:
   qxmledit:
     command: desktop-launch $SNAP/bin/qxmledit
-    desktop: opt/qxmledit/QXmlEdit.desktop
+    desktop: share/${SNAPCRAFT_PROJECT_NAME}/QXmlEdit.desktop
     plugs:
       - desktop
       - desktop-legacy
@@ -25,17 +25,20 @@ apps:
       - opengl
       - home
       - removable-media
-    environment:
-      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/opt/qxmledit/
+
 parts:
   qxmledit:
     plugin: qmake
     qt-version: qt5
     options:
       - CONFIG+=release
+      - QXMLEDIT_INST_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/bin
+      - QXMLEDIT_INST_DATA_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share/$SNAPCRAFT_PROJECT_NAME
+      - QXMLEDIT_INST_DOC_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share/$SNAPCRAFT_PROJECT_NAME/doc
+      - QXMLEDIT_INST_LIB_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/lib
+      - QXMLEDIT_INST_INCLUDE_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share/$SNAPCRAFT_PROJECT_NAME/include
     source: https://github.com/lbellonda/qxmledit.git
-    source-branch: master
-    source-type: git
+    source-depth: 50
     build-packages:
       - build-essential
       - libgl1-mesa-dev
@@ -48,7 +51,7 @@ parts:
       - libqt5opengl5-dev
     override-build: |
       snapcraftctl build
-      sed -i 's|Icon=qxmledit|Icon=\${SNAP}/meta/gui/icon.svg|' ${SNAPCRAFT_PART_INSTALL}/opt/qxmledit/QXmlEdit.desktop
+      sed -i 's|Icon=qxmledit|Icon=\${SNAP}/meta/gui/icon.svg|' "${SNAPCRAFT_PART_INSTALL}"/snap/"${SNAPCRAFT_PROJECT_NAME}"/current/share/"${SNAPCRAFT_PROJECT_NAME}"/QXmlEdit.desktop
     stage-packages:
       - libqt5svg5
       - libqt5xmlpatterns5
@@ -228,8 +231,5 @@ parts:
       - -usr/share/doc/libx11-xcb1/changelog.Debian.gz
       - -usr/share/doc/libxkbcommon0/changelog.Debian.gz
     organize:
-      opt/qxmledit/qxmledit: bin/qxmledit
-      opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
-      opt/qxmledit/sample.style: bin/sample.style
-      
+      snap/$SNAPCRAFT_PROJECT_NAME/current: /
   desktop-qt5:
