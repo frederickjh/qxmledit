@@ -70,31 +70,6 @@ parts:
       - -usr/share/x11/locale/*
       exclude-changelogs:
       - -usr/share/doc/*/changelog*
-    stage:
-      - $exclude-x11-locales
-      - $exclude-changelogs
-      - -lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
-      - -lib/x86_64-linux-gnu/libpng12.so.0.54.0
-      - -usr/lib/x86_64-linux-gnu/glib-2.0/gio-querymodules
-      - -usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-resources
-      - -usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-schemas
-      - -usr/lib/x86_64-linux-gnu/libLLVM-6.0.so.1
-      - -usr/lib/x86_64-linux-gnu/libcups.so.2
-      - -usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
-      - -usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.0.0
-      - -usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
-      - -usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
-      - -usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
-      - -usr/lib/x86_64-linux-gnu/libelf-0.165.so
-      - -usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2
-      - -usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4800.2
-      - -usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2
-      - -usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
-      - -usr/lib/x86_64-linux-gnu/libjpeg.so.8.0.2
-      - -usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
-      - -usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
-      - -usr/lib/x86_64-linux-gnu/libxkbcommon-x11.so.0.0.0
-      - -usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0
     organize:
       opt/qxmledit/qxmledit: bin/qxmledit
       opt/qxmledit/QXmlEdit.appdata.xml: meta/gui/QXmlEdit.appdata.xml
