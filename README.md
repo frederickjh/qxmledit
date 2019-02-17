@@ -15,14 +15,12 @@ distributions.</p>
 
 ## Install
 
-    sudo snap install --beta qxmledit
+    sudo snap install qxmledit
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
 
 ![QXmlEdit](images/qxmledit-screenshot-800.png?raw=true "QXmlEdit")
-
-<p align="center">Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with :gift_heart: by Snapcrafters</p>
 
 ## Remaining tasks
 
@@ -47,10 +45,10 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
   - [x] Update the install instructions in this `README.md`
   - [x] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link](https://forum.snapcraft.io/t/call-for-testing-qxmledit/7087)
   - [x] Make a post in the [Snapcraft Forum](https://forum.snapcraft.io) asking for a transfer of the snap name from you to snapcrafters - [link](https://forum.snapcraft.io/t/asking-for-a-transfer-of-the-qxmledit-from-frederickjh-qxmledit-to-snapcrafters/8571)
-  - [ ] Ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to fork your repo into github.com/snapcrafters, and configure the repo for automatic publishing into edge on commit
-  - [ ] Add the provided Snapcraft build badge to this `README.md`
-  - [ ] Publish the snap in the Snap store stable channel
-  - [ ] Update the install instructions in this `README.md`
+  - ~~[x] Ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to fork your repo into github.com/snapcrafters, and configure the repo for automatic publishing into edge on commit~~ Appears to have been denied, and we are on our own.
+  - [x] Add the provided Snapcraft build badge to this `README.md`
+  - [x] Publish the snap in the Snap store stable channel
+  - [x] Update the install instructions in this `README.md`
   - [ ] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
   - [ ] Submit a pull request or patch upstream that adds snap install documentation - [link]()
   - [ ] Submit a pull request or patch upstream that adds the `snapcraft.yaml` and any required assets/launchers - [link]()
