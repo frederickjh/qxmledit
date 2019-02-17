@@ -52,7 +52,7 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
   - [x] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [link](https://forum.snapcraft.io/t/qxmledit-published-in-snap-store-stable-channel/10009)
   - [x] Submit a pull request or patch upstream that adds snap install documentation - [link](https://github.com/lbellonda/qxmledit/issues/59)
   - [x] Submit a pull request or patch upstream that adds the `snapcraft.yaml` and any required assets/launchers - [link](https://github.com/lbellonda/qxmledit/pull/60)
-  - [ ] Add upstream contact information to the `README.md`  
+  - [x] Add upstream contact information to the `README.md`  
   - If upstream accept the PR:
     - [ ] Request upstream create a Snap store account
     - [ ] Contact the Snap Advocacy team to request the snap be transferred to upstream
@@ -60,18 +60,14 @@ upstream so [QXmlEdit](http://qxmledit.org/) can authoritatively publish future 
 
 If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft.io).
 
-
 ## The Snapcrafters
 
 | [![frederickjh](https://avatars3.githubusercontent.com/u/864159?s=128&v=4)](https://github.com/frederickjh/) |
 | :---: |
 | [Frederick Henderson](https://github.com/frederickjh/) |
 
+## Upstream - QXmlEdit
 
-<!-- Uncomment and modify this when you have upstream contacts
-## Upstream
-
-| [![Upstream Name](http://gravatar.com/avatar/bc0bced65e963eb5c3a16cab8b004431?s=128)](https://github.com/upstreamname) |
+| [![lbellonda](https://avatars0.githubusercontent.com/u/11491048?s=400&v=4)](https://github.com/lbellonda) |
 | :---: |
-| [Upstream Name](https://github.com/upstreamname) |
--->
+| [Luca Bellonda](https://github.com/lbellonda) |
