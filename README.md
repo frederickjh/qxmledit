@@ -35,12 +35,13 @@ QXmlEdit is a simple XML editor based on Qt libraries. Its main features are unu
 [List of current versions of QXmlEdit available in the Snap Store](https://snapcraft.io/qxmledit/embedded?channels=true)
 
 ## The Developers
+### Snap
 
 | [![frederickjh](https://avatars3.githubusercontent.com/u/864159?s=128&v=4)](https://github.com/frederickjh/) |
 | :---: |
 | [Frederick Henderson](https://github.com/frederickjh/) |
 
-## Upstream - QXmlEdit
+### Upstream - QXmlEdit
 
 | [![lbellonda](https://avatars0.githubusercontent.com/u/11491048?s=400&v=4)](https://github.com/lbellonda) |
 | :---: |
