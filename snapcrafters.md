@@ -12,6 +12,12 @@ distributions.</p>
 <a href="https://build.snapcraft.io/user/frederickjh/qxmledit"><img src="https://build.snapcraft.io/badge/frederickjh/qxmledit.svg" alt="Snap Status"></a>
 </p>
 
+# Current Status of this todo list
+**After getting to the point on this project to snap QXmlEdit in the todo list to the tasks to hand over the project both the Snapcrafters and the QXmlEdit maintainers declined to take over the maintainership of the QXmlEdit snap. I will continue to maintain it as long as I can.  This todo list file originally forked from Snapcrafters is here for historic reason. Previously it was the README.md in this repository.**
+
+**Let this be a warning that if you snap programs there is a good chance that you will end up being the maintainer for the snap in the end.**
+
+Frederick Henderson
 
 ## Install
 
