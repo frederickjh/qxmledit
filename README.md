@@ -30,7 +30,8 @@ QXmlEdit is a simple XML editor based on Qt libraries. Its main features are unu
 
 ![QXmlEdit](images/qxmledit-screenshot-800.png?raw=true "QXmlEdit")
 
-## 
+## Current Versions
+<iframe src="https://snapcraft.io/qxmledit/embedded?channels=true" frameborder="0" width="100%" height="380px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
 
 ## The Developers
 
