@@ -45,6 +45,7 @@ parts:
       - QXMLEDIT_INST_LIB_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/lib
       - QXMLEDIT_INST_INCLUDE_DIR=/snap/$SNAPCRAFT_PROJECT_NAME/current/share/$SNAPCRAFT_PROJECT_NAME/include
     source: https://github.com/lbellonda/qxmledit.git
+    source-branch: devel
     source-depth: 50
     build-packages:
       - build-essential
@@ -83,3 +84,9 @@ parts:
     organize:
       snap/$SNAPCRAFT_PROJECT_NAME/current: /
   desktop-qt5:
+    stage:
+      - -usr/lib/x86_64-linux-gnu/qt5/plugins/*/*.so
+      - -usr/lib/x86_64-linux-gnu/glib*
+      - -usr/lib/x86_64-linux-gnu/lib*
+      - -usr/share/doc/lib*/changelog*
+      - -lib/x86_64-linux-gnu/lib*
