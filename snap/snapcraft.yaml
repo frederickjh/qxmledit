@@ -5,7 +5,7 @@ summary: QXmlEdit is a simple XML editor based on Qt libraries.
 description: |
   QXmlEdit is a simple XML editor based on Qt libraries. Its main features are unusual data visualization modes, nice XML manipulation and presentation and it is multi platform. It can split very big XML files into fragments, and compare XML and XSD files. It was born on Google code (https://code.google.com/p/qxmledit).
 
-grade: stable
+grade: devel
 confinement: strict
 
 icon: images/qxmledit.svg
