@@ -32,6 +32,16 @@ apps:
       - home
       - removable-media
       - network
+  demo-notifications:
+    command: >
+      usr/bin/notify-send
+      --icon="${SNAP}"/meta/gui/dialog-warning.png
+      --urgency=critical
+      'Oh Snap! The QXmlEdit snap is no longer supported as of 16 April 2021'
+      'Please uninstall the QXmlEdit snap and install from one of the supported sources at https://qxmledit.org/info.html. It will not receive any more security updates.'
+
+plugs:
+  desktop:
 
 parts:
   qxmledit:
@@ -90,3 +100,8 @@ parts:
       - -usr/lib/x86_64-linux-gnu/lib*
       - -usr/share/doc/lib*/changelog*
       - -lib/x86_64-linux-gnu/lib*
+  dependencies:
+    source: snap/local/empty
+    plugin: nil
+    stage-packages:
+    - libnotify-bin
