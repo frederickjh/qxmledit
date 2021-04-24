@@ -1,11 +1,3 @@
-# THIS PROJECT IS NOW ARCHIVED
-# PLEASE NO LONGER USE THE QXMLEDIT SNAP!
-If you currently use the QXmlEdit snap please uninstall it and reinstall from another source. Please see the [QXmlEdit Info and Downloads page](https://qxmledit.org/info.html) for other ways to install QXmlEdit.
-
-If you are interested in becoming the maintainer of the QXmlEdit snap and plan to update it for security updates in included packages, please contact me. 
-
-----
-
 <h1 align="center">
   <img src="images/logo.jpg" alt="QXmlEdit Logo">
   <br />
