@@ -22,7 +22,7 @@ real_home_dir="$(
 zenity \
         --warning \
         --title='Oh Snap! The QXmlEdit snap is no longer supported as of 16 April 2021' \
-        --text='<b>WARNING:</b> \\n \\n <b>The QXmlEdit snap is no longer supported as of 16 April 2021</b> \\n \\n Please uninstall the QXmlEdit snap and install from one of the supported sources at <a href="https://qxmledit.org/info.html"> QXmlEdit Info and Downloads page</a>. It will not receive any more security or normal updates.' \
+        --text='<b>WARNING:</b> \n \n <b>The QXmlEdit snap is no longer supported as of 16 April 2021</b> \n \n Please uninstall the QXmlEdit snap and install from one of the supported sources at <a href="https://qxmledit.org/info.html"> QXmlEdit Info and Downloads page</a>. It will not receive any more security or normal updates.' \
         --width=600 \
         --icon-name=dialog-warning
 
