@@ -6,6 +6,7 @@ If you are interested in becoming the maintainer of the QXmlEdit snap and plan t
 
 ----
 
+
 <h1 align="center">
   <img src="images/logo.jpg" alt="QXmlEdit Logo">
   <br />
